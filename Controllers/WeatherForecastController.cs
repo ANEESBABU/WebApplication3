@@ -14,11 +14,6 @@ namespace WebApplication3.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
-        private readonly HttpClient httpClient;
-        public WeatherForecastController(HttpClient client)
-        {
-            httpClient = client;
-        }
         [HttpGet]
         public IActionResult Get()
         {
